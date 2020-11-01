@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Send Whatsapp without save number</string>
+    <string name="send_whatsapp">Send Whatsapp</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="admob_app_id">ca-app-pub-7075193449785146~8951776262</string>
+    <string name="admob_banner_id">ca-app-pub-7075193449785146/9207444057</string>
+</resources>
