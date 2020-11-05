@@ -8,7 +8,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.example.newapp"
+        applicationId "com.example.video"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
@@ -42,5 +42,4 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
-    implementation 'com.squareup.picasso:picasso:2.71828'
 }
