@@ -1,16 +1,16 @@
 package com.example.videoview
 
-import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.Button
-import android.widget.MediaController
-import android.widget.VideoView
+import androidx.annotation.UiThread
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-
+import com.google.gson.Gson
+import org.jetbrains.anko.doAsync
+import org.jetbrains.anko.uiThread
+import java.net.URL
 
 
 class MainActivity : AppCompatActivity() {
@@ -18,17 +18,52 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
 
-        var lambdafunction = { str: String ->
-            // returns the expression below
-            Log.d("TAG", str)
-        }
-        val recycler = findViewById<RecyclerView>(R.id.recyclerView)
 
-        val adapter0 = MyAdapter(lambdafunction)
-        recycler.adapter = adapter0
-        recycler.layoutManager = LinearLayoutManager(application)
+        //        ///////////////////////עובדדדדד
+
+//        var lambdafunction = { str: String ->
+//            // returns the expression below
+//            Log.d("TAG", str)
+//        }
+//
+//
+//
+//        val recycler = findViewById<RecyclerView>(R.id.recyclerView)
+//
+//        val adapter0 = MyAdapter(lambdafunction)
+//        recycler.adapter = adapter0
+//        recycler.layoutManager = LinearLayoutManager(application)
+//
+//        doAsync {
+//        val streamUrl = URL("https://privetstream.tk/recordings/").readText()
+//        val gson = Gson()
+//        val data = gson.fromJson(streamUrl, Array<Model>::class.java).toList()
+//            uiThread {
+//                data.forEach{
+//                   adapter0.add("${it.name}")
+//                }
+//            }
+//        }
+//        ///////////////////////עובדדדדד
+//        val streamUrl = URL("https://privetstream.tk/recordings/").readText()
+//        val gson = Gson()
+//        val data = gson.fromJson(streamUrl, Array<Model>::class.java).asList()
+//        Log.d("TAG", data.toString())
+//        for (x in 0 until data.size)
+//       // val fromSer =  (data[x].name)
+
+
+
+//    }
+        //adapter0.add((data[x].name))
+//        val urt :String = "da-1604405827.flv"
+//            //  var urlt1 :String = "da-1604405739"
+//        adapter0.add(urt)
+
+
 
     }
+
 }
 
 
